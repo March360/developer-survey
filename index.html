@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Developer Survey</title>
+</head>
+<body>
+  <main id="main">
+    <h1 id="title">Developer Survey 2023</h1>
+   
+   <form id="survey-form" >
+    <div class="form-group">
+      <fieldset>
+        <legend>Survey Form</legend>
+        <div class="form-group-child">
+          <label class="text-label" id="name-label">Fullname</label><br>
+        <input id="name" type="text" name="name" placeholder="Enter your Fullname" class="form-control" autocomplete="off" required>
+        </div>
+        <div class="form-group-child">
+        <label class="text-label" id="email-label" >Email</label><br>
+        <input id="email" type="email" name="email" placeholder="Enter your Email" class="form-control" autocomplete="off" required>
+        </div>
+
+        <div class="form-group-child">
+          <label class="text-label" id="positionLabel">Position</label><br>
+          <select name="experience" id="dropdown" class="form-control">
+              <option>Frontend Web Developer</option>
+              <option>Backend Web Developer</option> 
+              <option>Game Developer</option> 
+              <option>Mobile App Developer</option>
+              <option>Full-Stack Web Developer</option> 
+              <option>Desktop Software Developer</option>
+              <option>Data Scientist(Big Data Developer)</option> 
+              <option>Artificial Intelligence Developer</option>
+              <option>Operating Systems Developer</option> 
+              <option>DevOps Engineer</option>
+              <option>Security Developer (SecDevOps)</option>    
+            </select>
+        </div>
+        <div class="form-group-child">
+          <label class="text-label" id="number-label">Age</label><br>
+        <input id="number" type="number" placeholder="0" min="14" max="100" class="number" required>
+        </div>
+        <div class="form-group-child">
+          <p class="label-gender">Gender</p>
+          <input type="radio" id="male" name="gender" value="Male" required>
+          <label for="male" class="gender">Male</label><br>
+          <input type="radio" id="female" name="gender" value="Female" required>
+          <label for="female" class="gender">Female</label>
+        </div>
+        <div class="form-group-child">
+          <p  class="label-lang">Please select your Programming language</p>
+          <input type="radio" id="python" name="lang" value="Python" required>
+          <label for="Python" class="language">Python</label><br>
+          <input type="radio" id="javascript" name="lang" value="Javascript" required>
+          <label for="Javascript" class="language">Javascript</label><br>
+          <input type="radio" id="java" name="lang" value="Java" required>
+          <label for="Java" class="language">Java</label><br>
+          <input type="radio" id="c" name="lang" value="C" required>
+          <label for="C" class="language">C</label><br>
+          <input type="radio" id="c-sharp" name="lang" value="C#" required>
+          <label for="C#" class="language">C#</label><br>
+          <input type="radio" id="c-plus" name="lang" value="C++" required>
+          <label for="C#" class="language">C++</label><br>
+          <input type="radio" id="php" name="lang" value="PHP" required>
+          <label for="PHP" class="language">PHP</label><br>
+          <input type="radio" id="go" name="lang" value="GO" required>
+          <label for="GO" class="language">GO</label><br>
+          <input type="radio" id="r" name="lang" value="R" required>
+          <label for="R" class="language">R</label><br>
+          <input type="radio" id="swift" name="lang" value="Swift" required>
+          <label for="swift" class="language">Swift</label>
+        </div>
+         <div class="form-group-child">
+          <label class="text-label" id="textarea-label" for="txt-message">Message</label><br>
+          <textarea name="txt-message" id="textarea" cols="50" rows="4" placeholder="Enter message here.."  ></textarea><br>
+
+
+        </div>
+        <div class="form-group-child btn">
+          <input id="submit" type="submit">
+        </div>
+      </fieldset>
+    </div>
+   </form>
+   </main>
+</body>
+</html>

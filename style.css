@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#main{
+  background: url("https://www.thedesigngrouponline.com/wp-content/uploads/2012/04/shutterstock_1122339353.jpg") no-repeat;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  padding: 30px 20px;
+  font-family: 'Poppins', Ubuntu;
+  background-attachment: fixed;
+}
+#title{
+  text-align: center;
+  color: #fff;
+  font-size: 3.5rem;
+  padding-top: 20px;
+  top: 50px;
+  font-weight: 700;
+  font-family: Orbitron, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-shadow: 2px 3px 4px #000;
+  margin-bottom: 50px;
+}
+
+
+legend{
+  margin-left: 2rem;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  
+}
+
+#main #survey-form{
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 15px 10px;
+  border: 2px solid #222;
+  border-radius: 1em;
+  position: scroll;
+  background-color:  #222;
+  opacity: 9;
+  box-shadow: 2px 3px 4px 1px;
+ 
+  
+}
+
+#main .form-group{
+  margin: 0 auto .1rem auto;
+  padding: 3px;
+  /* background-color: crimson; */
+
+}
+#main #survey-form .form-group-child{
+  margin: 0 auto 8px auto;
+}
+#main #survey-form .form-control{
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 0.15rem 0.75rem;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 3px solid #fff;
+  border-radius: 0.25rem;
+  outline: none;
+  margin: 10px auto 10px auto;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  
+}
+#name-label,#email-label,#number-label,#positionLabel{
+  color: #fff;
+  padding: 5px 0;
+  margin-left: 5px;
+  font-weight: 500;
+}
+#main #survey-form .number{
+  display: block;
+  width: 100%;
+  max-width: 70px;
+  height: 40px;
+  padding: 0.15rem 0.75rem;
+  color: #495057;
+  background-color: #fff;
+  border: 3px solid #fff;
+  outline: none;
+  margin-top: 10px;
+  left: 0;
+  margin-bottom: 10px;
+  /* background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+ */
+}
+#main fieldset{
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 3px 5px 8px 4px;
+  border-radius: 8px;
+}
+
+.label-lang,.label-gender{
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.text-label{
+  color: #fff;
+  font-size: 1.2rem;
+}
+.language,.gender{
+  color: #fff;
+}
+#submit{
+  width: 100px;
+  height: 45px;
+  color: #fff;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  background-color: #222;
+  outline: none;
+  border: 2px solid #ccc;
+  font-weight: 500;
+  font-family:  'Poppins', Ubuntu;
+  
+}
+#submit:hover{
+  color: maroon;
+  background: #fff;
+  border: 2px solid #fff;
+}
+input[type=text],input[type=email],input[type=number],select{
+  border-radius: 6px;
+  font-size: 1.2rem;
+  position: relative;
+
+
+}
+input[type=text]:focus,input[type=email]:focus,
+input[type=number]:focus{
+  border: 3px solid crimson !important;
+  width: 100px;
+}
+#textarea{
+  height: 50px;
+  -webkit-transition: height 0.4s ease-in-out;
+  transition: height 0.4s ease-in-out;
+  width: 100%;
+  font-size: 1.2rem !important;
+  color: #495057;
+  resize: none;
+  overflow: auto;
+  padding: 10px;
+  outline: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-top: 8px;
+}
+#textarea:focus{
+  border: 3px solid crimson;
+  height: 90px;
+}
+
+.btn{
+  display: flex;
+  justify-content: flex-end;
+ margin-top: 20px !important;
+}
+
+@media screen and (max-width: 768px){
+  #survey-form{
+    width: 100%;
+  }#title{
+    font-size: 2.9rem;
+  }
+}
+@media screen and (max-width: 460px){
+  #main{
+    padding: 25px 15px;
+  }
+  #title{
+    font-size: 2rem;
+  }#description{
+    font-size: 1.2rem;
+  }#survey-form{
+    width: 100%;
+  }legend{
+    text-align: center;
+    margin-left: 0;
+    font-size: 1.5rem;
+  }
+}
+
+
+@media screen and (max-width: 280px){
+  .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: auto;
+  }
+  #submit{
+    width: 90px;
+    font-size: 15px;
+  }#title{
+    font-size: 1.9rem;
+  }
+  
+  legend{
+    text-align: center;
+    margin-left: 0;
+    font-size: 1.3rem;
+  }#main #survey-form{
+    padding: 30px 0;
+  }#name-label,#email-label,#number-label,
+  #positionLabel,.label-gender,.label-lang,#textarea-label{
+    font-size: 1.1rem;
+  }input[type=text],input[type=email],input[type=number],select,
+  #python,#javascript,#java,#c,#c-sharp,#c-plus,#php,#go,#r,#swift,#male,#female{
+    font-size: 15px;
+  }::-webkit-input-placeholder{ /* Edge */
+    font-size: 15px;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer */
+    font-size: 15px;
+  }
+  
+  ::placeholder{
+    font-size: 15px;
+  }#dropdown option{
+    margin: 0 auto;
+    position: absolute;
+    max-width: 50px;
+    font-size: 12px;
+  }
+}
